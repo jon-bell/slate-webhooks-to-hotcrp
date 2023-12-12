@@ -1,0 +1,28 @@
+{
+  "name": "slate-webhooks-to-hotcrp",
+  "version": "1.0.0",
+  "description": "Webhooks to push comments and tags into HotCRP based on data from Slate",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "tslint": "^6.1.3",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "ts-node": "^10.9.2"
+  }
+}
